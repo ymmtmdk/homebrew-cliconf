@@ -5,8 +5,6 @@ class Cliconf < Formula
   sha256 "3547be1d815b5eb67fa4d0b3001dfd6089b924cb86b26491abcda1714d351b50"
   license "MIT"
 
-  depends_on "bash" => :run
-
   def install
     bin.install "cliconf.sh" => "cliconf"
     (share/"cliconf/scripts").install "scripts/cliconf_integrate.bash", "scripts/cliconf_integrate.fish"
